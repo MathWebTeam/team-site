@@ -1,394 +1,298 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-              
-<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
-<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
-<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
- 
-<title>Mathwebteam</title> 
-<style> 
-.navbar{
-    width:  1140px ;
-    height: 56px;
-    margin: 0 auto;
-}
-.carousel-inner img {
-      width: 100%;
-      height: 480px;
-}
-.main{
-      width: 1440px;
-      margin: 0 auto;
-}
-.carousel .carousel-container {
-      height: 480px;
-}
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mathwebteam</title>
+</head>
 
-.panel{   
-    width: 1140px;
-    margin: 0 auto;
-    background:#ffffff;   
-	 
-}
-.pane2{   
-    width: 1140px;
-    margin: 0 auto;
-    background:#ffffff;   
-	 
-}
-.biao {
-    position:relative;
-    left:16px;
-    top:16px; 
-    
-    color:#333333
-}
-img.small 
-{
-height: 16px;
-width: 16px;
-}
-text-align:center
-.gongaolan-title{
-    position:relative;
-    left:16px;
-    top:16px; 
-     
-} 
-</style>
-</head> 
-<body >        
+<body>
+<!-- 导航栏 -->
 <header class="navbar">
-  <section class="navbar-section">
-         <a style="color:#16c98d ">W</a><a style="color:#288ad6">E</a>
-        <a style="color:#ffc83f">B</a><a style="color:#16c98d">兴</a>
-        <a style="color:#288ad6">趣</a><a style="color:#ffc83f">组</a></a> 
-  </section>
-  <section class="navbar-section">
-        <a href="#" class="btn "> 登录</a>
-        <a href="#" class="btn  "> 注册</a>
-  </section>
+    <div class="container navbar-container">
+        <section class="navbar-section navbar-logo-text">
+            <span class="text-green">W</span>
+            <span class="text-blue">e</span>
+            <span class="text-yellow">b</span>
+            <span class="text-green">兴</span>
+            <span class="text-blue">趣</span>
+            <span class="text-yellow">组</span>
+        </section>
+        <section class="navbar-section">
+            <div>
+                <a href="" class="navbar-button link-primary">登录</a>
+                <a href="" class="navbar-button bg-green">注册</a>
+            </div>
+        </section>
+    </div>
 </header>
- <!--导航栏-->
- <div class="main columns">
-        <div class="column col-12">
-            <div class="carousel">
-                <input type="radio" id="slide-1" name="carousel-radio" hidden="" class="carousel-locator" checked="">
-                <input type="radio" id="slide-2" name="carousel-radio" hidden="" class="carousel-locator">
-                <input type="radio" id="slide-3" name="carousel-radio" hidden="" class="carousel-locator">
-                <input type="radio" id="slide-4" name="carousel-radio" hidden="" class="carousel-locator">
-                <div class="carousel-container">
-                    <figure class="carousel-item">
-                        <label class="item-prev btn btn-action btn-lg" for="slide-4">
-                            <i class="icon icon-arrow-left"></i>
-                        </label>
-                        <label class="item-next btn btn-action btn-lg" for="slide-2">
-                            <i class="icon icon-arrow-right"></i>
-                        </label>
-                        <img src="images/taketurn.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper">
-                    </figure>
-
-                    <figure class="carousel-item">
-                        <label class="item-prev btn btn-action btn-lg" for="slide-1">
-                            <i class="icon icon-arrow-left"></i>
-                        </label>
-                        <label class="item-next btn btn-action btn-lg" for="slide-3">
-                            <i class="icon icon-arrow-right"></i>
-                        </label>
-                        <img src="images/taketurn.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper">
-                    </figure>
-
-                    <figure class="carousel-item">
-                        <label class="item-prev btn btn-action btn-lg" for="slide-2">
-                            <i class="icon icon-arrow-left"></i>
-                        </label>
-                        <label class="item-next btn btn-action btn-lg" for="slide-4">
-                            <i class="icon icon-arrow-right"></i>
-                        </label>
-                        <img src="images/taketurn.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper">
-                    </figure>
-
-                    <figure class="carousel-item">
-                        <label class="item-prev btn btn-action btn-lg" for="slide-3">
-                            <i class="icon icon-arrow-left"></i>
-                        </label>
-                        <label class="item-next btn btn-action btn-lg" for="slide-1">
-                            <i class="icon icon-arrow-right"></i>
-                        </label>
-                        <img src="images/taketurn.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper">
-                    </figure>
-                </div>
-                <div class="carousel-nav">
-                    <label class="nav-item text-hide c-hand" for="slide-1">1</label>
-                    <label class="nav-item text-hide c-hand" for="slide-2">2</label>
-                    <label class="nav-item text-hide c-hand" for="slide-3">3</label>
-                    <label class="nav-item text-hide c-hand" for="slide-4">4</label>
-                </div>
+<!-- 轮播图 -->
+<div class="slide">
+    <div class="carousel">
+        <input type="radio" id="slide-1" name="carousel-radio" hidden="" class="carousel-locator" checked="">
+        <input type="radio" id="slide-2" name="carousel-radio" hidden="" class="carousel-locator">
+        <input type="radio" id="slide-3" name="carousel-radio" hidden="" class="carousel-locator">
+        <input type="radio" id="slide-4" name="carousel-radio" hidden="" class="carousel-locator">
+        <div class="carousel-container">
+            <figure class="carousel-item">
+                <label class="item-prev btn btn-action btn-lg" for="slide-4">
+                    <i class="icon icon-arrow-left"></i>
+                </label>
+                <label class="item-next btn btn-action btn-lg" for="slide-2">
+                    <i class="icon icon-arrow-right"></i>
+                </label>
+                <img src="http://ww2.sinaimg.cn/large/0060lm7Tly1flfb7wm1d2j31400dc0wf.jpg"
+                     class="img-responsive rounded" alt="macOS Yosemite Wallpaper">
+            </figure>
+            <figure class="carousel-item">
+                <label class="item-prev btn btn-action btn-lg" for="slide-1">
+                    <i class="icon icon-arrow-left"></i>
+                </label>
+                <label class="item-next btn btn-action btn-lg" for="slide-3">
+                    <i class="icon icon-arrow-right"></i>
+                </label>
+                <img src="http://ww2.sinaimg.cn/large/0060lm7Tly1flfb7wm1d2j31400dc0wf.jpg"
+                     class="img-responsive rounded" alt="macOS Yosemite Wallpaper">
+            </figure>
+            <figure class="carousel-item">
+                <label class="item-prev btn btn-action btn-lg" for="slide-2">
+                    <i class="icon icon-arrow-left"></i>
+                </label>
+                <label class="item-next btn btn-action btn-lg" for="slide-4">
+                    <i class="icon icon-arrow-right"></i>
+                </label>
+                <img src="http://ww2.sinaimg.cn/large/0060lm7Tly1flfb7wm1d2j31400dc0wf.jpg"
+                     class="img-responsive rounded" alt="macOS Yosemite Wallpaper">
+            </figure>
+            <figure class="carousel-item">
+                <label class="item-prev btn btn-action btn-lg" for="slide-3">
+                    <i class="icon icon-arrow-left"></i>
+                </label>
+                <label class="item-next btn btn-action btn-lg" for="slide-1">
+                    <i class="icon icon-arrow-right"></i>
+                </label>
+                <img src="http://ww2.sinaimg.cn/large/0060lm7Tly1flfb7wm1d2j31400dc0wf.jpg"
+                     class="img-responsive rounded" alt="macOS Yosemite Wallpaper">
+            </figure>
+        </div>
+        <div class="carousel-nav">
+            <label class="nav-item text-hide c-hand" for="slide-1">1</label>
+            <label class="nav-item text-hide c-hand" for="slide-2">2</label>
+            <label class="nav-item text-hide c-hand" for="slide-3">3</label>
+            <label class="nav-item text-hide c-hand" for="slide-4">4</label>
+        </div>
+    </div>
+</div>
+<!-- 主要内容 -->
+<main class="container">
+    <!-- 第一部分(成员动态、公告栏、排行榜)-->
+    <div class="columns">
+        <!--左侧部分-->
+        <div class="column col-9">
+            <!-- 成员动态 -->
+            <div class="plate">
+                <h5 class="title">成员动态</h5>
+                <div class="divider"></div>
+                <ul class="dynamic-list">
+                    <li class="dynamic-item">
+                        <!-- 左侧统计信息 -->
+                        <div class="dynamic-count">
+                            <img src="images/dianzan_selected.png" alt="">
+                            <p>212</p>
+                            <img src="images/eye.png" alt="">
+                            <p>432</p>
+                        </div>
+                        <!-- 右侧动态信息 -->
+                        <h5 class="title">2017年11月第3周周报</h5>
+                        <p class="text-gray-666">最近AlphaGo
+                            Zero的发布，深度学习又火了一把，小伙伴们按捺不住内心的躁动，要搞一个游戏AI，好吧，那就从规则简单、老少皆宜的五子棋开始讲起。要做AI，得现有场景，所以本文先实现一个五子棋的逻辑。
+                            ...
+                        </p>
+                        <p>
+                            <a href="" class="link-primary">周小静</a>　
+                            <time class="text-gray">5分钟前</time>
+                        </p>
+                        <div class="divider"></div>
+                    </li>
+                    <li class="dynamic-item">
+                        <!-- 左侧统计信息 -->
+                        <div class="dynamic-count">
+                            <img src="images/dianzan_selected.png" alt="">
+                            <p>212</p>
+                            <img src="images/eye.png" alt="">
+                            <p>432</p>
+                        </div>
+                        <!-- 右侧动态信息 -->
+                        <h5 class="title">2017年11月第3周周报</h5>
+                        <p class="text-gray-666">最近AlphaGo
+                            Zero的发布，深度学习又火了一把，小伙伴们按捺不住内心的躁动，要搞一个游戏AI，好吧，那就从规则简单、老少皆宜的五子棋开始讲起。要做AI，得现有场景，所以本文先实现一个五子棋的逻辑。
+                            ...
+                        </p>
+                        <p>
+                            <a href="" class="link-primary">周小静</a>　
+                            <time class="text-gray">5分钟前</time>
+                        </p>
+                        <div class="divider"></div>
+                    </li>
+                    <li class="dynamic-item">
+                        <!-- 左侧统计信息 -->
+                        <div class="dynamic-count">
+                            <img src="images/dianzan_selected.png" alt="">
+                            <p>212</p>
+                            <img src="images/eye.png" alt="">
+                            <p>432</p>
+                        </div>
+                        <!-- 右侧动态信息 -->
+                        <h5 class="title">2017年11月第3周周报</h5>
+                        <p class="text-gray-666">最近AlphaGo
+                            Zero的发布，深度学习又火了一把，小伙伴们按捺不住内心的躁动，要搞一个游戏AI，好吧，那就从规则简单、老少皆宜的五子棋开始讲起。要做AI，得现有场景，所以本文先实现一个五子棋的逻辑。
+                            ...
+                        </p>
+                        <p>
+                            <a href="" class="link-primary">周小静</a>　
+                            <time class="text-gray">5分钟前</time>
+                        </p>
+                        <div class="divider"></div>
+                    </li>
+                    <li class="dynamic-item">
+                        <!-- 左侧统计信息 -->
+                        <div class="dynamic-count">
+                            <img src="images/dianzan_selected.png" alt="">
+                            <p>212</p>
+                            <img src="images/eye.png" alt="">
+                            <p>432</p>
+                        </div>
+                        <!-- 右侧动态信息 -->
+                        <h5 class="title">2017年11月第3周周报</h5>
+                        <p class="text-gray-666">最近AlphaGo
+                            Zero的发布，深度学习又火了一把，小伙伴们按捺不住内心的躁动，要搞一个游戏AI，好吧，那就从规则简单、老少皆宜的五子棋开始讲起。要做AI，得现有场景，所以本文先实现一个五子棋的逻辑。
+                            ...
+                        </p>
+                        <p>
+                            <a href="" class="link-primary">周小静</a>　
+                            <time class="text-gray">5分钟前</time>
+                        </p>
+                        <div class="divider"></div>
+                    </li>
+                    <li class="dynamic-item">
+                        <!-- 左侧统计信息 -->
+                        <div class="dynamic-count">
+                            <img src="images/dianzan_selected.png" alt="">
+                            <p>212</p>
+                            <img src="images/eye.png" alt="">
+                            <p>432</p>
+                        </div>
+                        <!-- 右侧动态信息 -->
+                        <h5 class="title">2017年11月第3周周报</h5>
+                        <p class="text-gray-666">最近AlphaGo
+                            Zero的发布，深度学习又火了一把，小伙伴们按捺不住内心的躁动，要搞一个游戏AI，好吧，那就从规则简单、老少皆宜的五子棋开始讲起。要做AI，得现有场景，所以本文先实现一个五子棋的逻辑。
+                            ...
+                        </p>
+                        <p>
+                            <a href="" class="link-primary">周小静</a>　
+                            <time class="text-gray">5分钟前</time>
+                        </p>
+                        <div class="divider"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--右侧部分-->
+        <div class="column col-3">
+            <!--公告栏-->
+            <div class="plate">
+                <h5 class="title">公告栏</h5>
+                <div class="divider"></div>
+                <ul class="notice-list plate-list">
+                    <li class="text-single-line">
+                        <span>[2017-11-14]</span>
+                        <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
+                    </li>
+                    <li class="text-single-line">
+                        <span>[2017-11-14]</span>
+                        <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
+                    </li>
+                    <li class="text-single-line">
+                        <span>[2017-11-14]</span>
+                        <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
+                    </li>
+                    <li class="text-single-line">
+                        <span>[2017-11-14]</span>
+                        <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
+                    </li>
+                    <li class="text-single-line">
+                        <span>[2017-11-14]</span>
+                        <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
+                    </li>
+                    <li class="text-single-line">
+                        <span>[2017-11-14]</span>
+                        <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
+                    </li>
+                    <li class="text-single-line">
+                        <span>[2017-11-14]</span>
+                        <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
+                    </li>
+                    <li class="text-single-line">
+                        <span>[2017-11-14]</span>
+                        <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
+                    </li>
+                    <li class="text-single-line">
+                        <span>[2017-11-14]</span>
+                        <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
+                    </li>
+                </ul>
+            </div><!--公告栏 end-->
+            <!--排行榜-->
+            <div class="plate ranking-list-plate">
+                <h5 class="title">排行榜</h5>
+                <div class="divider"></div>
+                <ul class="ranking-list plate-list">
+                    <li class="text-pink">
+                        <span class="number">1.</span>
+                        <img src="images/avatar.png" alt="" class="avatar">
+                        <span class="name">杨喜喜</span>
+                        <span class="score">9129</span>
+                    </li>
+                    <li class="text-yellow">
+                        <span class="number">2.</span>
+                        <img src="images/avatar.png" alt="" class="avatar">
+                        <span class="name">杨喜喜</span>
+                        <span class="score">9129</span>
+                    </li>
+                    <li class="text-blue">
+                        <span class="number">3.</span>
+                        <img src="images/avatar.png" alt="" class="avatar">
+                        <span class="name">杨喜喜</span>
+                        <span class="score">9129</span>
+                    </li>
+                    <li>
+                        <span class="number">4.</span>
+                        <img src="images/avatar.png" alt="" class="avatar">
+                        <span class="name">杨喜喜</span>
+                        <span class="score">9129</span>
+                    </li>
+                    <li >
+                        <span class="number">5.</span>
+                        <img src="images/avatar.png" alt="" class="avatar">
+                        <span class="name">杨喜喜</span>
+                        <span class="score">9129</span>
+                    </li>
+                    <li>
+                        <span class="number">6.</span>
+                        <img src="images/avatar.png" alt="" class="avatar">
+                        <span class="name">杨喜喜</span>
+                        <span class="score">9129</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-    <!--主体-->
-    <div class="panel">
-                 <div class="columns">
-                      <div class="column col-9">
-                                <table class="table   table-hover">
-                                        <thead>
-                                          <tr> 
-                                          <span style="font-size:24px"class="biao">成员动态</span> 
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <td class="column col-1">
-                                                <ul>
-                                                    <img class="small" src="images/dianzan1.png" />
-                                                     <br>
-                                                     <p style="color:#999999" >11</p>
-                                                     <img class="small"  src="images/read.png">
-                                                     <br>
-                                                     <p style="color:#999999" >11</p>
-                                                    </ul>
-                                                      </td>
-                                            <td class="column col-11">
-                                                    <div class="tiles">
-                                                        <div class="tile-icon">
-                                                         <div class="tile-icon">
-                                                            <i class="icon icon-file centered"></i>
-                                                            </div>
-                                                            </div>
-                                                            <div class="tile-content">
-                                                              <h5 class="tile-title"style="color:#333333">2017年11月第2周周报</h5>
-                                                              <p class="tile-subtitle "style="color:#666666"">可选的 speed 参数规定隐藏/显示的速度，可以取以下值："slow"、"fast" 或毫秒。
-                                                              可选的 callback 参数是隐藏或显示完成后所执行的函数名称。 </p>
-                                                            </div>
-                                                            <div class="tile-action">
-                                                            <div class="tile-subtitle text-gray"><span class="chip">周小金</span>
-                                                            <span class="chip">三分钟前</span></div>
-                                                            </div>
-                                                          </div>   
-                                            </td>
-                                          </tr>
-                                        </tbody>
-                                        <tbody>
-                                                <tr>
-                                                  <td class="column col-1">
-                                                      <ul>
-                                                              <img class="small" src="images/dianzan1.png" />
-                                                           <br>
-                                                           <p style="color:#999999" >11</p>
-                                                           <img class="small"  src="images/read.png">
-                                                           <br>
-                                                           <p style="color:#999999" >11</p>
-                                                          </ul>
-                                                            </td>
-                                                  <td class="column col-11">
-                                                          <div class="tiles">
-                                                                  <div class="tile-icon">
-                                                                    <div class="tile-icon">
-                                                                      <i class="icon icon-file centered"></i>
-                                                                    </div>
-                                                                  </div>
-                                                                  <div class="tile-content">
-                                                                    <h5 class="tile-title"style="color:#333333">2017年11月第2周周报</h5>
-                                                                    <p class="tile-subtitle "style="color:#666666"">可选的 speed 参数规定隐藏/显示的速度，可以取以下值："slow"、"fast" 或毫秒。
-                                                                          可选的 callback 参数是隐藏或显示完成后所执行的函数名称。 </p>
-                                                                  </div>
-                                                                  <div class="tile-action">
-                                                                          <div class="tile-subtitle text-gray"><span class="chip">周小金</span>
-                                                                              <span class="chip">三分钟前</span></div>
-                                                                        </div>
-                                                                </div>   
-                                                  </td>
-                                                </tr>
-                                              </tbody>   
-                                              <tbody>
-                                                    <tr>
-                                                      <td class="column col-1">
-                                                          <ul>
-                                                                  <img class="small" src="images/dianzan1.png" />
-                                                               <br>
-                                                               <p style="color:#999999" >11</p>
-                                                               <img class="small"  src="images/read.png">
-                                                               <br>
-                                                               <p style="color:#999999" >11</p>
-                                                              </ul>
-                                                                </td>
-                                                      <td class="column col-11">
-                                                              <div class="tiles">
-                                                                      <div class="tile-icon">
-                                                                        <div class="tile-icon">
-                                                                          <i class="icon icon-file centered"></i>
-                                                                        </div>
-                                                                      </div>
-                                                                      <div class="tile-content">
-                                                                        <h5 class="tile-title"style="color:#333333">2017年11月第2周周报</h5>
-                                                                        <p class="tile-subtitle "style="color:#666666"">可选的 speed 参数规定隐藏/显示的速度，可以取以下值："slow"、"fast" 或毫秒。
-                                                                              可选的 callback 参数是隐藏或显示完成后所执行的函数名称。 </p>
-                                                                      </div>
-                                                                      <div class="tile-action">
-                                                                              <div class="tile-subtitle text-gray"><span class="chip">周小金</span>
-                                                                                  <span class="chip">三分钟前</span></div>
-                                                                            </div>
-                                                                    </div>   
-                                                      </td>
-                                                    </tr>
-                                                  </tbody>   <tbody>
-                                                        <tr>
-                                                          <td class="column col-1">
-                                                              <ul>
-                                                                      <img class="small" src="images/dianzan1.png" />
-                                                                   <br>
-                                                                   <p style="color:#999999" >11</p>
-                                                                   <img class="small"  src="images/read.png">
-                                                                   <br>
-                                                                   <p style="color:#999999" >11</p>
-                                                                  </ul>
-                                                                    </td>
-                                                          <td class="column col-11">
-                                                                  <div class="tiles">
-                                                                          <div class="tile-icon">
-                                                                            <div class="tile-icon">
-                                                                              <i class="icon icon-file centered"></i>
-                                                                            </div>
-                                                                          </div>
-                                                                          <div class="tile-content">
-                                                                            <h5 class="tile-title"style="color:#333333">2017年11月第2周周报</h5>
-                                                                            <p class="tile-subtitle "style="color:#666666"">可选的 speed 参数规定隐藏/显示的速度，可以取以下值："slow"、"fast" 或毫秒。
-                                                                                  可选的 callback 参数是隐藏或显示完成后所执行的函数名称。 </p>
-                                                                          </div>
-                                                                          <div class="tile-action">
-                                                                                  <div class="tile-subtitle text-gray"><span class="chip">周小金</span>
-                                                                                      <span class="chip">三分钟前</span></div>
-                                                                                </div>
-                                                                        </div>   
-                                                          </td>
-                                                        </tr>
-                                                      </tbody>   <tbody>
-                                                            <tr>
-                                                              <td class="column col-1">
-                                                                  <ul>
-                                                                          <img class="small" src="images/dianzan1.png" />
-                                                                       <br>
-                                                                       <p style="color:#999999" >11</p>
-                                                                       <img class="small"  src="images/read.png">
-                                                                       <br>
-                                                                       <p style="color:#999999" >11</p>
-                                                                      </ul>
-                                                                        </td>
-                                                              <td class="column col-11">
-                                                                      <div class="tiles">
-                                                                              <div class="tile-icon">
-                                                                                <div class="tile-icon">
-                                                                                  <i class="icon icon-file centered"></i>
-                                                                                </div>
-                                                                              </div>
-                                                                              <div class="tile-content">
-                                                                                <h5 class="tile-title"style="color:#333333">2017年11月第2周周报</h5>
-                                                                                <p class="tile-subtitle "style="color:#666666"">可选的 speed 参数规定隐藏/显示的速度，可以取以下值："slow"、"fast" 或毫秒。
-                                                                                      可选的 callback 参数是隐藏或显示完成后所执行的函数名称。 </p>
-                                                                              </div>
-                                                                              <div class="tile-action">
-                                                                                      <div class="tile-subtitle text-gray"><span class="chip">周小金</span>
-                                                                                          <span class="chip">三分钟前</span></div>
-                                                                                    </div>
-                                                                            </div>   
-                                                              </td>
-                                                            </tr>
-                                                          </tbody>
-                                                          <!--脚部-->   
-                                                          <tfoot>
-                                                                <tr>
-                                                                  <td></td>
-                                                                </tr>
-                                                              </tfoot>
-                                      </table>     
-                                      </div></ul>
-                            
-                             <!--分为左右两部分，9：3左边是表格，表格单元1：11分为两部分-->
-                      <div class="column col-3"> 
-                            <div class="gongaolan""column col-6"> 
-                                    <div class="gongaolan-body">
-                                        <table class="table table-hover">
-                                                <thead>
-                                                        <tr>
-                                                          <th><span style="font-size:24px"style="color:#333333">公告栏</span> 
-                                                            <a style="color:#16c98d">更多</a></th>
-                                                        </tr>
-                                                      </thead>
-                                            <tbody>
-                                            <tr><td style="font-size:14px"><samp>[2017/11/11]</samp><ruby>关于挑战赛比赛事宜...</ruby></td></tr>
-                                            <tr><td style="font-size:14px"><samp>[2017/11/11]</samp><ruby>关于挑战赛比赛事宜...</ruby></td></tr>
-                                            <tr><td style="font-size:14px"><samp>[2017/11/11]</samp><ruby>关于挑战赛比赛事宜...</ruby></td></tr>
-                                            <tr><td style="font-size:14px"><samp>[2017/11/11]</samp><ruby>关于挑战赛比赛事宜...</ruby></td></tr>
-                                            <tr><td style="font-size:14px"><samp>[2017/11/11]</samp><ruby>关于挑战赛比赛事宜...</ruby></td></tr>
-                                            <tr><td style="font-size:14px"><samp>[2017/11/11]</samp><ruby>关于挑战赛比赛事宜...</ruby></td></tr>
-                                            <tr><td style="font-size:14px"><samp>[2017/11/11]</samp><ruby>关于挑战赛比赛事宜...</ruby></td></tr>
-                                            <tr><td style="font-size:14px"><samp>[2017/11/11]</samp><ruby>关于挑战赛比赛事宜...</ruby></td></tr>
-                                            <tr><td style="font-size:14px"><samp>[2017/11/11]</samp><ruby>关于挑战赛比赛事宜...</ruby></td></tr>
-                                            <tr><td style="font-size:14px"><samp>[2017/11/11]</samp><ruby>关于挑战赛比赛事宜...</ruby></td></tr>
-                                            </tbody>
-                                          </table>
-                                    </div>
-                                  </div>
-
-                                  <div class="panhangbang""column col-6"> 
-                                        <div class="panhangbang-body">
-                                            <table class="table  ">
-                                                    <thead>
-                                                            <tr>
-                                                              <th><span style="font-size:24px"style="color:#333333">排行榜</span> 
-                                                                
-                                                            </tr>
-                                                          </thead>
-                                                <tbody>
-                                                <tr><td> <li><figure class="avatar avatar-lg"><img src="images/touxiang.png" alt="..."></figure>  <samp style="color:#fa5a5b">董阔&nbsp </samp><span style="color:#fa5a5b"class="chip">8888</span></li></td></tr>
-                                                <tr><td> <li><figure class="avatar avatar-lg"><img src="images/touxiang.png" alt="..."></figure>  <samp style="color:#ffc83f">周小金</samp>    <span class="chip"style="color:#ffc83f">8888</span></li></td></tr>
-                                                <tr><td> <li><figure class="avatar avatar-lg"><img src="images/touxiang.png" alt="..."></figure>  <samp style="color:#288ad6">董阔 &nbsp</samp><span style="color:#288ad6"class="chip">7777</span></li></td></tr>
-                                                <tr><td> <li><figure class="avatar avatar-lg"><img src="images/touxiang.png" alt="..."></figure>  <samp style="color:#565656">董阔 &nbsp</samp><span style="color:#565656"class="chip">6666</span></li></td></tr>
-                                                <tr><td> <li><figure class="avatar avatar-lg"><img src="images/touxiang.png" alt="..."></figure>  <samp style="color:#565656">董阔 &nbsp</samp><span style="color:#565656"class="chip">5555</span></li></td></tr>
-                                                <tr><td> <li><figure class="avatar avatar-lg"><img src="images/touxiang.png" alt="..."></figure>  <samp style="color:#565656">董阔 &nbsp</samp><span style="color:#565656"class="chip">1111</span></li></td></tr>
-                                                
-                                                </tbody>
-                                              </table>
-                                        </div>
-                                      </div>
-                                 </div>
-                                 </div>
-                  </div>
-          
-<!--第二部分-->
-<div class="pane2">
-    <div class="columns">
-         <div class="column col-9">
-                <table class="table  table-hover">
-                        <thead>
-                          <tr>
-                            <th><span style="font-size:24px"style="color:#333333">交流讨论</span></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td><figure class="avatar avatar-lg"><img src="images/touxiang.png" alt="..."></figure>周小金</td>
-                            <td>Crime, Drama</td>
-                            <td>14 October 1994</td>
-                          </tr>
-                        </tbody>
-                      </table>
- 
-
-
-                <div class="column col-3"> 
-                     </div>
-             </div>
-             </div>
-             </div>
-            </div>
-     
-     
-            
-               
+</main>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js "></script>
 </body>
+
 </html>
