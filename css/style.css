@@ -173,7 +173,7 @@ p, li {
 .doc{
     float:right;
     height:50%; 
-    clear:both;  
+       
 }
 .avatar1{
     width: 22px;
@@ -212,4 +212,19 @@ p, li {
 .ranking-list .score{
     float: right;
     line-height: 40px;
+}
+.imagess{
+    
+    width: 100%;
+    height:272px;
+    margin: 0 auto;
+}
+.centerss{
+    margin: 0 auto;
+}
+.footer{
+    text-align: center;
+    height:36px;
+    color: #999999;
+    background: #333333;
 }
