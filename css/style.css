@@ -160,7 +160,25 @@ p, li {
     width: 32px;
     font-size: 12px;
 }
-
+.dynamic-count2 {
+    position: absolute;
+    left: -8px;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    width: 40px;
+   
+}
+/*讨论区下载栏  向右浮动 然后清除浮动*/
+.doc{
+    float:right;
+    height:50%; 
+    clear:both;  
+}
+.avatar1{
+    width: 22px;
+    height: 22px; 
+}
 .dynamic-count p {
     margin: 0 0 8px 0;
     color: #acb3c2;

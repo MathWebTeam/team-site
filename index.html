@@ -11,288 +11,569 @@
 </head>
 
 <body>
-<!-- 导航栏 -->
-<header class="navbar">
-    <div class="container navbar-container">
-        <section class="navbar-section navbar-logo-text">
-            <span class="text-green">W</span>
-            <span class="text-blue">e</span>
-            <span class="text-yellow">b</span>
-            <span class="text-green">兴</span>
-            <span class="text-blue">趣</span>
-            <span class="text-yellow">组</span>
-        </section>
-        <section class="navbar-section">
-            <div>
-                <a href="" class="navbar-button link-primary">登录</a>
-                <a href="" class="navbar-button bg-green">注册</a>
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <div class="container navbar-container">
+            <section class="navbar-section navbar-logo-text">
+                <span class="text-green">W</span>
+                <span class="text-blue">e</span>
+                <span class="text-yellow">b</span>
+                <span class="text-green">兴</span>
+                <span class="text-blue">趣</span>
+                <span class="text-yellow">组</span>
+            </section>
+            <section class="navbar-section">
+                <div>
+                    <a href="" class="navbar-button link-primary">登录</a>
+                    <a href="" class="navbar-button bg-green">注册</a>
+                </div>
+            </section>
+        </div>
+    </header>
+    <!-- 轮播图 -->
+    <div class="slide">
+        <div class="carousel">
+            <input type="radio" id="slide-1" name="carousel-radio" hidden="" class="carousel-locator" checked="">
+            <input type="radio" id="slide-2" name="carousel-radio" hidden="" class="carousel-locator">
+            <input type="radio" id="slide-3" name="carousel-radio" hidden="" class="carousel-locator">
+            <input type="radio" id="slide-4" name="carousel-radio" hidden="" class="carousel-locator">
+            <div class="carousel-container">
+                <figure class="carousel-item">
+                    <label class="item-prev btn btn-action btn-lg" for="slide-4">
+                        <i class="icon icon-arrow-left"></i>
+                    </label>
+                    <label class="item-next btn btn-action btn-lg" for="slide-2">
+                        <i class="icon icon-arrow-right"></i>
+                    </label>
+                    <img src="http://ww2.sinaimg.cn/large/0060lm7Tly1flfb7wm1d2j31400dc0wf.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper">
+                </figure>
+                <figure class="carousel-item">
+                    <label class="item-prev btn btn-action btn-lg" for="slide-1">
+                        <i class="icon icon-arrow-left"></i>
+                    </label>
+                    <label class="item-next btn btn-action btn-lg" for="slide-3">
+                        <i class="icon icon-arrow-right"></i>
+                    </label>
+                    <img src="http://ww2.sinaimg.cn/large/0060lm7Tly1flfb7wm1d2j31400dc0wf.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper">
+                </figure>
+                <figure class="carousel-item">
+                    <label class="item-prev btn btn-action btn-lg" for="slide-2">
+                        <i class="icon icon-arrow-left"></i>
+                    </label>
+                    <label class="item-next btn btn-action btn-lg" for="slide-4">
+                        <i class="icon icon-arrow-right"></i>
+                    </label>
+                    <img src="http://ww2.sinaimg.cn/large/0060lm7Tly1flfb7wm1d2j31400dc0wf.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper">
+                </figure>
+                <figure class="carousel-item">
+                    <label class="item-prev btn btn-action btn-lg" for="slide-3">
+                        <i class="icon icon-arrow-left"></i>
+                    </label>
+                    <label class="item-next btn btn-action btn-lg" for="slide-1">
+                        <i class="icon icon-arrow-right"></i>
+                    </label>
+                    <img src="http://ww2.sinaimg.cn/large/0060lm7Tly1flfb7wm1d2j31400dc0wf.jpg" class="img-responsive rounded" alt="macOS Yosemite Wallpaper">
+                </figure>
             </div>
-        </section>
-    </div>
-</header>
-<!-- 轮播图 -->
-<div class="slide">
-    <div class="carousel">
-        <input type="radio" id="slide-1" name="carousel-radio" hidden="" class="carousel-locator" checked="">
-        <input type="radio" id="slide-2" name="carousel-radio" hidden="" class="carousel-locator">
-        <input type="radio" id="slide-3" name="carousel-radio" hidden="" class="carousel-locator">
-        <input type="radio" id="slide-4" name="carousel-radio" hidden="" class="carousel-locator">
-        <div class="carousel-container">
-            <figure class="carousel-item">
-                <label class="item-prev btn btn-action btn-lg" for="slide-4">
-                    <i class="icon icon-arrow-left"></i>
-                </label>
-                <label class="item-next btn btn-action btn-lg" for="slide-2">
-                    <i class="icon icon-arrow-right"></i>
-                </label>
-                <img src="http://ww2.sinaimg.cn/large/0060lm7Tly1flfb7wm1d2j31400dc0wf.jpg"
-                     class="img-responsive rounded" alt="macOS Yosemite Wallpaper">
-            </figure>
-            <figure class="carousel-item">
-                <label class="item-prev btn btn-action btn-lg" for="slide-1">
-                    <i class="icon icon-arrow-left"></i>
-                </label>
-                <label class="item-next btn btn-action btn-lg" for="slide-3">
-                    <i class="icon icon-arrow-right"></i>
-                </label>
-                <img src="http://ww2.sinaimg.cn/large/0060lm7Tly1flfb7wm1d2j31400dc0wf.jpg"
-                     class="img-responsive rounded" alt="macOS Yosemite Wallpaper">
-            </figure>
-            <figure class="carousel-item">
-                <label class="item-prev btn btn-action btn-lg" for="slide-2">
-                    <i class="icon icon-arrow-left"></i>
-                </label>
-                <label class="item-next btn btn-action btn-lg" for="slide-4">
-                    <i class="icon icon-arrow-right"></i>
-                </label>
-                <img src="http://ww2.sinaimg.cn/large/0060lm7Tly1flfb7wm1d2j31400dc0wf.jpg"
-                     class="img-responsive rounded" alt="macOS Yosemite Wallpaper">
-            </figure>
-            <figure class="carousel-item">
-                <label class="item-prev btn btn-action btn-lg" for="slide-3">
-                    <i class="icon icon-arrow-left"></i>
-                </label>
-                <label class="item-next btn btn-action btn-lg" for="slide-1">
-                    <i class="icon icon-arrow-right"></i>
-                </label>
-                <img src="http://ww2.sinaimg.cn/large/0060lm7Tly1flfb7wm1d2j31400dc0wf.jpg"
-                     class="img-responsive rounded" alt="macOS Yosemite Wallpaper">
-            </figure>
-        </div>
-        <div class="carousel-nav">
-            <label class="nav-item text-hide c-hand" for="slide-1">1</label>
-            <label class="nav-item text-hide c-hand" for="slide-2">2</label>
-            <label class="nav-item text-hide c-hand" for="slide-3">3</label>
-            <label class="nav-item text-hide c-hand" for="slide-4">4</label>
+            <div class="carousel-nav">
+                <label class="nav-item text-hide c-hand" for="slide-1">1</label>
+                <label class="nav-item text-hide c-hand" for="slide-2">2</label>
+                <label class="nav-item text-hide c-hand" for="slide-3">3</label>
+                <label class="nav-item text-hide c-hand" for="slide-4">4</label>
+            </div>
         </div>
     </div>
-</div>
-<!-- 主要内容 -->
+    <!-- 主要内容 -->
+    <main class="container">
+        <!-- 第一部分(成员动态、公告栏、排行榜)-->
+        <div class="columns">
+            <!--左侧部分-->
+            <div class="column col-9">
+                <!-- 成员动态 -->
+                <div class="plate">
+                    <h5 class="title">成员动态</h5>
+                    <div class="divider"></div>
+                    <ul class="dynamic-list">
+                        <li class="dynamic-item">
+                            <!-- 左侧统计信息 -->
+                            <div class="dynamic-count">
+                                <img src="images/dianzan_selected.png" alt="">
+                                <p>212</p>
+                                <img src="images/eye.png" alt="">
+                                <p>432</p>
+                            </div>
+                            <!-- 右侧动态信息 -->
+                            <h5 class="title">2017年11月第3周周报</h5>
+                            <p class="text-gray-666">最近AlphaGo Zero的发布，深度学习又火了一把，小伙伴们按捺不住内心的躁动，要搞一个游戏AI，好吧，那就从规则简单、老少皆宜的五子棋开始讲起。要做AI，得现有场景，所以本文先实现一个五子棋的逻辑。
+                                ...
+                            </p>
+                            <p>
+                                <a href="" class="link-primary">周小静</a>
+                                <time class="text-gray">5分钟前</time>
+                            </p>
+                            <div class="divider"></div>
+                        </li>
+                        <li class="dynamic-item">
+                            <!-- 左侧统计信息 -->
+                            <div class="dynamic-count">
+                                <img src="images/dianzan_selected.png" alt="">
+                                <p>212</p>
+                                <img src="images/eye.png" alt="">
+                                <p>432</p>
+                            </div>
+                            <!-- 右侧动态信息 -->
+                            <h5 class="title">2017年11月第3周周报</h5>
+                            <p class="text-gray-666">最近AlphaGo Zero的发布，深度学习又火了一把，小伙伴们按捺不住内心的躁动，要搞一个游戏AI，好吧，那就从规则简单、老少皆宜的五子棋开始讲起。要做AI，得现有场景，所以本文先实现一个五子棋的逻辑。
+                                ...
+                            </p>
+                            <p>
+                                <a href="" class="link-primary">周小静</a>
+                                <time class="text-gray">5分钟前</time>
+                            </p>
+                            <div class="divider"></div>
+                        </li>
+                        <li class="dynamic-item">
+                            <!-- 左侧统计信息 -->
+                            <div class="dynamic-count">
+                                <img src="images/dianzan_selected.png" alt="">
+                                <p>212</p>
+                                <img src="images/eye.png" alt="">
+                                <p>432</p>
+                            </div>
+                            <!-- 右侧动态信息 -->
+                            <h5 class="title">2017年11月第3周周报</h5>
+                            <p class="text-gray-666">最近AlphaGo Zero的发布，深度学习又火了一把，小伙伴们按捺不住内心的躁动，要搞一个游戏AI，好吧，那就从规则简单、老少皆宜的五子棋开始讲起。要做AI，得现有场景，所以本文先实现一个五子棋的逻辑。
+                                ...
+                            </p>
+                            <p>
+                                <a href="" class="link-primary">周小静</a>
+                                <time class="text-gray">5分钟前</time>
+                            </p>
+                            <div class="divider"></div>
+                        </li>
+                        <li class="dynamic-item">
+                            <!-- 左侧统计信息 -->
+                            <div class="dynamic-count">
+                                <img src="images/dianzan_selected.png" alt="">
+                                <p>212</p>
+                                <img src="images/eye.png" alt="">
+                                <p>432</p>
+                            </div>
+                            <!-- 右侧动态信息 -->
+                            <h5 class="title">2017年11月第3周周报</h5>
+                            <p class="text-gray-666">最近AlphaGo Zero的发布，深度学习又火了一把，小伙伴们按捺不住内心的躁动，要搞一个游戏AI，好吧，那就从规则简单、老少皆宜的五子棋开始讲起。要做AI，得现有场景，所以本文先实现一个五子棋的逻辑。
+                                ...
+                            </p>
+                            <p>
+                                <a href="" class="link-primary">周小静</a>
+                                <time class="text-gray">5分钟前</time>
+                            </p>
+                            <div class="divider"></div>
+                        </li>
+                        <li class="dynamic-item">
+                            <!-- 左侧统计信息 -->
+                            <div class="dynamic-count">
+                                <img src="images/dianzan_selected.png" alt="">
+                                <p>212</p>
+                                <img src="images/eye.png" alt="">
+                                <p>432</p>
+                            </div>
+                            <!-- 右侧动态信息 -->
+                            <h5 class="title">2017年11月第3周周报</h5>
+                            <p class="text-gray-666">最近AlphaGo Zero的发布，深度学习又火了一把，小伙伴们按捺不住内心的躁动，要搞一个游戏AI，好吧，那就从规则简单、老少皆宜的五子棋开始讲起。要做AI，得现有场景，所以本文先实现一个五子棋的逻辑。
+                                ...
+                            </p>
+                            <p>
+                                <a href="" class="link-primary">周小静</a>
+                                <time class="text-gray">5分钟前</time>
+                            </p>
+                            <div class="divider"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--右侧部分-->
+            <div class="column col-3">
+                <!--公告栏-->
+                <div class="plate">
+                    <h5 class="title">公告栏</h5>
+                    <div class="divider"></div>
+                    <ul class="notice-list plate-list">
+                        <li class="text-single-line">
+                            <span>[2017-11-14]</span>
+                            <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
+                        </li>
+                        <li class="text-single-line">
+                            <span>[2017-11-14]</span>
+                            <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
+                        </li>
+                        <li class="text-single-line">
+                            <span>[2017-11-14]</span>
+                            <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
+                        </li>
+                        <li class="text-single-line">
+                            <span>[2017-11-14]</span>
+                            <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
+                        </li>
+                        <li class="text-single-line">
+                            <span>[2017-11-14]</span>
+                            <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
+                        </li>
+                        <li class="text-single-line">
+                            <span>[2017-11-14]</span>
+                            <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
+                        </li>
+                        <li class="text-single-line">
+                            <span>[2017-11-14]</span>
+                            <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
+                        </li>
+                        <li class="text-single-line">
+                            <span>[2017-11-14]</span>
+                            <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
+                        </li>
+                        <li class="text-single-line">
+                            <span>[2017-11-14]</span>
+                            <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--公告栏 end-->
+                <!--排行榜-->
+                <div class="plate ranking-list-plate">
+                    <h5 class="title">排行榜</h5>
+                    <div class="divider"></div>
+                    <ul class="ranking-list plate-list">
+                        <li class="text-pink">
+                            <span class="number">1.</span>
+                            <img src="images/avatar.png" alt="" class="avatar">
+                            <span class="name">杨喜喜</span>
+                            <span class="score">9129</span>
+                        </li>
+                        <li class="text-yellow">
+                            <span class="number">2.</span>
+                            <img src="images/avatar.png" alt="" class="avatar">
+                            <span class="name">杨喜喜</span>
+                            <span class="score">9129</span>
+                        </li>
+                        <li class="text-blue">
+                            <span class="number">3.</span>
+                            <img src="images/avatar.png" alt="" class="avatar">
+                            <span class="name">杨喜喜</span>
+                            <span class="score">9129</span>
+                        </li>
+                        <li>
+                            <span class="number">4.</span>
+                            <img src="images/avatar.png" alt="" class="avatar">
+                            <span class="name">杨喜喜</span>
+                            <span class="score">9129</span>
+                        </li>
+                        <li>
+                            <span class="number">5.</span>
+                            <img src="images/avatar.png" alt="" class="avatar">
+                            <span class="name">杨喜喜</span>
+                            <span class="score">9129</span>
+                        </li>
+                        <li>
+                            <span class="number">6.</span>
+                            <img src="images/avatar.png" alt="" class="avatar">
+                            <span class="name">杨喜喜</span>
+                            <span class="score">9129</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main class="container">
+        <!-- 第二部分(交流讨论、共享资源)-->
+        <div class="columns">
+            <!--左侧部分-->
+            <div class="column col-9">
+                <!-- 交流讨论 -->
+                <div class="plate">
+                    <h5 class="title">公告栏</h5>
+                    <div class="divider"></div>
+                    <ul class="dynamic-list">
+                        <li class="dynamic-item">
+                            <!-- 左侧统计信息 -->
+                            <div class="dynamic-count2">
+                                <img src="images/avatar.png" alt="" class="avatar">
+                            </div>
+                            <div class="doc">
+
+                                <img src="images/reply.png" alt="" class="avatar1">
+                                <img src="images/eye.png" alt="" class="avatar1">
+                                <P> 22 44</P>
+
+                            </div>
+                            <h6 class="title">Text-overflow 属性规定当文本溢出包含元素时发生的事情</h6>
+                            <p>
+                                <a href="" class="link-primary">周小金</a>
+                                <time class="text-gray">2017/11/14 08:05</time>
+                            </p>
+                            <div class="divider"></div>
+                        </li>
+                        <li class="dynamic-item">
+                            <!-- 左侧统计信息 -->
+                            <div class="dynamic-count2">
+                                <img src="images/avatar.png" alt="" class="avatar">
+                            </div>
+                            <div class="doc">
+
+                                <img src="images/reply.png" alt="" class="avatar1">
+                                <img src="images/eye.png" alt="" class="avatar1">
+                                <P> 22 44</P>
+
+                            </div>
+                            <h6 class="title">Text-overflow 属性规定当文本溢出包含元素时发生的事情</h6>
+                            <p>
+                                <a href="" class="link-primary">周小金</a>
+                                <time class="text-gray">2017/11/14 08:05</time>
+                            </p>
+                            <div class="divider"></div>
+                        </li>
+                        <li class="dynamic-item">
+                            <!-- 左侧统计信息 -->
+                            <div class="dynamic-count2">
+                                <img src="images/avatar.png" alt="" class="avatar">
+                            </div>
+                            <div class="doc">
+
+                                <img src="images/reply.png" alt="" class="avatar1">
+                                <img src="images/eye.png" alt="" class="avatar1">
+                                <P>22 44</P>
+
+                            </div>
+                            <h6 class="title">Text-overflow 属性规定当文本溢出包含元素时发生的事情</h6>
+                            <p>
+                                <a href="" class="link-primary">周小金</a>
+                                <time class="text-gray">2017/11/14 08:05</time>
+                            </p>
+                            <div class="divider"></div>
+                        </li>
+                        <li class="dynamic-item">
+                            <!-- 左侧统计信息 -->
+                            <div class="dynamic-count2">
+                                <img src="images/avatar.png" alt="" class="avatar">
+                            </div>
+                            <div class="doc">
+
+                                <img src="images/reply.png" alt="" class="avatar1">
+                                <img src="images/eye.png" alt="" class="avatar1">
+                                <P> 22 44</P>
+
+                            </div>
+                            <h6 class="title">Text-overflow 属性规定当文本溢出包含元素时发生的事情</h6>
+                            <p>
+                                <a href="" class="link-primary">周小金</a>
+                                <time class="text-gray">2017/11/14 08:05</time>
+                            </p>
+                            <div class="divider"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column col-3">
+                <!--共享资源-->
+                <div class="plate">
+                    <h5 class="title">共享资源</h5>
+                    <div class="divider"></div>
+                    <ul>
+                        <li class="text-single-line">
+                            <a href="#" title="《疯狂Java讲义第五版》from:董阔">疯狂Java讲义第五版.pdf</span>
+                        </li>
+                        <li class="text-single-line">
+                            <a href="#" title="《Python核心编程Ⅱ》from:董阔">Python核心编程 Ⅱ.pdf</span>
+                        </li>
+                        <li class="text-single-line">
+                            <a href="#" title="《Python核心编程Ⅱ》from:董阔">Python核心编程 Ⅱ.pdf</span>
+                        </li>
+                        <li class="text-single-line">
+                            <a href="#" title="《Python核心编程Ⅱ》from:董阔">Python核心编程 Ⅱ.pdf</span>
+                        </li>
+                        <li class="text-single-line">
+                            <a href="#" title="《Python核心编程Ⅱ》from:董阔">Python核心编程 Ⅱ.pdf</span>
+                        </li>
+                        <li class="text-single-line">
+                            <a href="#" title="《Python核心编程Ⅱ》from:董阔">Python核心编程 Ⅱ.pdf</span>
+                        </li>
+                        <li class="text-single-line">
+                            <a href="#" title="《Python核心编程Ⅱ》from:董阔">Python核心编程 Ⅱ.pdf</span>
+                        </li>
+                        <li class="text-single-line">
+                            <a href="#" title="《Python核心编程Ⅱ》from:董阔">Python核心编程 Ⅱ.pdf</span>
+                        </li>
+                        <li class="text-single-line">
+                            <a href="#" title="">JavaScript高级程序设计.pdf</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!--作品展示-->
+    <main class="container">
+        <h5 class="text-gray-333">共享资源</h5>
+        <!-- 第三部分(作品展示)-->
+        <div class="columns">
+            <!--分为4部分-->
+            <div class="column col-3">
+
+                <!-- 交流讨论 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/face.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-body">
+                        <div class="text-gray-333">
+                            <h5>Nicemark</h5>
+                        </div>
+                        <div class="text-gray-666">
+                            <samp>一款简洁的markdown编写器，为你带来舒适便捷的编写体验</samp>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-3">
+                <!-- 交流讨论 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/face.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-body">
+                        <div class="text-gray-333">
+                            <h5>Nicemark</h5>
+                        </div>
+                        <div class="text-gray-666">
+                            <samp>一款简洁的markdown编写器，为你带来舒适便捷的编写体验</samp>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-3">
+                <!-- 交流讨论 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/face.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-body">
+                        <div class="text-gray-333">
+                            <h5>Nicemark</h5>
+                        </div>
+                        <div class="text-gray-666">
+                            <samp>一款简洁的markdown编写器，为你带来舒适便捷的编写体验</samp>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-3">
+                <!-- 交流讨论 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/face.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-body">
+                        <div class="text-gray-333">
+                            <h5>Nicemark</h5>
+                        </div>
+                        <div class="text-gray-666">
+                            <samp>一款简洁的markdown编写器，为你带来舒适便捷的编写体验</samp>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+<!--小组成员-->
+<div class="divider"></div>
 <main class="container">
-    <!-- 第一部分(成员动态、公告栏、排行榜)-->
-    <div class="columns">
-        <!--左侧部分-->
-        <div class="column col-9">
-            <!-- 成员动态 -->
-            <div class="plate">
-                <h5 class="title">成员动态</h5>
-                <div class="divider"></div>
-                <ul class="dynamic-list">
-                    <li class="dynamic-item">
-                        <!-- 左侧统计信息 -->
-                        <div class="dynamic-count">
-                            <img src="images/dianzan_selected.png" alt="">
-                            <p>212</p>
-                            <img src="images/eye.png" alt="">
-                            <p>432</p>
+        <h5 class="text-gray-333">小组成员</h5>
+        <!-- 第四部分(小组成员)-->
+        <div class="columns">
+            <!--分为4部分-->
+            <div class="column col-3">
+
+                <!-- 小组成员 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/face.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-body">
+                        <div class="text-gray-333">
+                            <h5>周小金</h5>
                         </div>
-                        <!-- 右侧动态信息 -->
-                        <h5 class="title">2017年11月第3周周报</h5>
-                        <p class="text-gray-666">最近AlphaGo
-                            Zero的发布，深度学习又火了一把，小伙伴们按捺不住内心的躁动，要搞一个游戏AI，好吧，那就从规则简单、老少皆宜的五子棋开始讲起。要做AI，得现有场景，所以本文先实现一个五子棋的逻辑。
-                            ...
-                        </p>
-                        <p>
-                            <a href="" class="link-primary">周小静</a>　
-                            <time class="text-gray">5分钟前</time>
-                        </p>
-                        <div class="divider"></div>
-                    </li>
-                    <li class="dynamic-item">
-                        <!-- 左侧统计信息 -->
-                        <div class="dynamic-count">
-                            <img src="images/dianzan_selected.png" alt="">
-                            <p>212</p>
-                            <img src="images/eye.png" alt="">
-                            <p>432</p>
+                        <div class="text-gray-666">
+                            <samp>一款简洁的markdown编写器，为你带来舒适便捷的编写体验</samp>
                         </div>
-                        <!-- 右侧动态信息 -->
-                        <h5 class="title">2017年11月第3周周报</h5>
-                        <p class="text-gray-666">最近AlphaGo
-                            Zero的发布，深度学习又火了一把，小伙伴们按捺不住内心的躁动，要搞一个游戏AI，好吧，那就从规则简单、老少皆宜的五子棋开始讲起。要做AI，得现有场景，所以本文先实现一个五子棋的逻辑。
-                            ...
-                        </p>
-                        <p>
-                            <a href="" class="link-primary">周小静</a>　
-                            <time class="text-gray">5分钟前</time>
-                        </p>
-                        <div class="divider"></div>
-                    </li>
-                    <li class="dynamic-item">
-                        <!-- 左侧统计信息 -->
-                        <div class="dynamic-count">
-                            <img src="images/dianzan_selected.png" alt="">
-                            <p>212</p>
-                            <img src="images/eye.png" alt="">
-                            <p>432</p>
-                        </div>
-                        <!-- 右侧动态信息 -->
-                        <h5 class="title">2017年11月第3周周报</h5>
-                        <p class="text-gray-666">最近AlphaGo
-                            Zero的发布，深度学习又火了一把，小伙伴们按捺不住内心的躁动，要搞一个游戏AI，好吧，那就从规则简单、老少皆宜的五子棋开始讲起。要做AI，得现有场景，所以本文先实现一个五子棋的逻辑。
-                            ...
-                        </p>
-                        <p>
-                            <a href="" class="link-primary">周小静</a>　
-                            <time class="text-gray">5分钟前</time>
-                        </p>
-                        <div class="divider"></div>
-                    </li>
-                    <li class="dynamic-item">
-                        <!-- 左侧统计信息 -->
-                        <div class="dynamic-count">
-                            <img src="images/dianzan_selected.png" alt="">
-                            <p>212</p>
-                            <img src="images/eye.png" alt="">
-                            <p>432</p>
-                        </div>
-                        <!-- 右侧动态信息 -->
-                        <h5 class="title">2017年11月第3周周报</h5>
-                        <p class="text-gray-666">最近AlphaGo
-                            Zero的发布，深度学习又火了一把，小伙伴们按捺不住内心的躁动，要搞一个游戏AI，好吧，那就从规则简单、老少皆宜的五子棋开始讲起。要做AI，得现有场景，所以本文先实现一个五子棋的逻辑。
-                            ...
-                        </p>
-                        <p>
-                            <a href="" class="link-primary">周小静</a>　
-                            <time class="text-gray">5分钟前</time>
-                        </p>
-                        <div class="divider"></div>
-                    </li>
-                    <li class="dynamic-item">
-                        <!-- 左侧统计信息 -->
-                        <div class="dynamic-count">
-                            <img src="images/dianzan_selected.png" alt="">
-                            <p>212</p>
-                            <img src="images/eye.png" alt="">
-                            <p>432</p>
-                        </div>
-                        <!-- 右侧动态信息 -->
-                        <h5 class="title">2017年11月第3周周报</h5>
-                        <p class="text-gray-666">最近AlphaGo
-                            Zero的发布，深度学习又火了一把，小伙伴们按捺不住内心的躁动，要搞一个游戏AI，好吧，那就从规则简单、老少皆宜的五子棋开始讲起。要做AI，得现有场景，所以本文先实现一个五子棋的逻辑。
-                            ...
-                        </p>
-                        <p>
-                            <a href="" class="link-primary">周小静</a>　
-                            <time class="text-gray">5分钟前</time>
-                        </p>
-                        <div class="divider"></div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!--右侧部分-->
-        <div class="column col-3">
-            <!--公告栏-->
-            <div class="plate">
-                <h5 class="title">公告栏</h5>
-                <div class="divider"></div>
-                <ul class="notice-list plate-list">
-                    <li class="text-single-line">
-                        <span>[2017-11-14]</span>
-                        <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
-                    </li>
-                    <li class="text-single-line">
-                        <span>[2017-11-14]</span>
-                        <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
-                    </li>
-                    <li class="text-single-line">
-                        <span>[2017-11-14]</span>
-                        <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
-                    </li>
-                    <li class="text-single-line">
-                        <span>[2017-11-14]</span>
-                        <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
-                    </li>
-                    <li class="text-single-line">
-                        <span>[2017-11-14]</span>
-                        <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
-                    </li>
-                    <li class="text-single-line">
-                        <span>[2017-11-14]</span>
-                        <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
-                    </li>
-                    <li class="text-single-line">
-                        <span>[2017-11-14]</span>
-                        <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
-                    </li>
-                    <li class="text-single-line">
-                        <span>[2017-11-14]</span>
-                        <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
-                    </li>
-                    <li class="text-single-line">
-                        <span>[2017-11-14]</span>
-                        <span title="关于举办2017年网页设计大赛通知">关于举办2017年网页设计大赛通知</span>
-                    </li>
-                </ul>
-            </div><!--公告栏 end-->
-            <!--排行榜-->
-            <div class="plate ranking-list-plate">
-                <h5 class="title">排行榜</h5>
-                <div class="divider"></div>
-                <ul class="ranking-list plate-list">
-                    <li class="text-pink">
-                        <span class="number">1.</span>
-                        <img src="images/avatar.png" alt="" class="avatar">
-                        <span class="name">杨喜喜</span>
-                        <span class="score">9129</span>
-                    </li>
-                    <li class="text-yellow">
-                        <span class="number">2.</span>
-                        <img src="images/avatar.png" alt="" class="avatar">
-                        <span class="name">杨喜喜</span>
-                        <span class="score">9129</span>
-                    </li>
-                    <li class="text-blue">
-                        <span class="number">3.</span>
-                        <img src="images/avatar.png" alt="" class="avatar">
-                        <span class="name">杨喜喜</span>
-                        <span class="score">9129</span>
-                    </li>
-                    <li>
-                        <span class="number">4.</span>
-                        <img src="images/avatar.png" alt="" class="avatar">
-                        <span class="name">杨喜喜</span>
-                        <span class="score">9129</span>
-                    </li>
-                    <li >
-                        <span class="number">5.</span>
-                        <img src="images/avatar.png" alt="" class="avatar">
-                        <span class="name">杨喜喜</span>
-                        <span class="score">9129</span>
-                    </li>
-                    <li>
-                        <span class="number">6.</span>
-                        <img src="images/avatar.png" alt="" class="avatar">
-                        <span class="name">杨喜喜</span>
-                        <span class="score">9129</span>
-                    </li>
-                </ul>
+            <div class="column col-3">
+                <!-- 交流讨论 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/face.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-body">
+                        <div class="text-gray-333">
+                            <h5>Nicemark</h5>
+                        </div>
+                        <div class="text-gray-666">
+                            <samp>一款简洁的markdown编写器，为你带来舒适便捷的编写体验</samp>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="column col-3">
+                <!-- 交流讨论 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/face.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-body">
+                        <div class="text-gray-333">
+                            <h5>Nicemark</h5>
+                        </div>
+                        <div class="text-gray-666">
+                            <samp>一款简洁的markdown编写器，为你带来舒适便捷的编写体验</samp>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-3">
+                <!-- 交流讨论 -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/face.jpg" class="img-responsive">
+                    </div>
+                    <div class="card-body">
+                        <div class="text-gray-333">
+                            <h5>Nicemark</h5>
+                        </div>
+                        <div class="text-gray-666">
+                            <samp>一款简洁的markdown编写器，为你带来舒适便捷的编写体验</samp>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-    </div>
-</main>
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js "></script>
+    </main>
+
+
+
+
+
+
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js "></script>
 </body>
 
 </html>
